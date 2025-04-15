@@ -19,6 +19,10 @@ alias aptdel="sudo apt remove"
 alias cls="clr"
 alias doas="sudo"
 
+## YOu can do the same to points to a .sh script directly provided it has a shebang '#!/bin/sh' is executable "chmod +x myscript.sh" and point to it's path.
+# Example: alias trim="path/to/script.sh"
+
+
 ### FOR STYLING .bashrc
 # Prompt that better adapts to terminal size changes and shows time
 if [ $(id -u) -eq 0 ]; then
