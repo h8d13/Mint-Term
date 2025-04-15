@@ -1,3 +1,4 @@
+### FOR .bash_aliases
 alias comms="cat ~/.bash_aliases | sed 's/alias//g'"
 alias editpc="sudo nano ~/.bash_aliases"
 alias updapc="sudo apt update && sudo apt upgrade -y"
@@ -18,6 +19,7 @@ alias aptdel="sudo apt remove"
 alias cls="clr"
 alias doas="sudo"
 
+### FOR STYLING .bashrc
 # Prompt that better adapts to terminal size changes and shows time
 if [ $(id -u) -eq 0 ]; then
     # Root user prompt with dynamic adjustment and time display
