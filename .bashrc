@@ -1,8 +1,8 @@
 alias comms="cat ~/.bash_aliases | sed 's/alias//g'"
 alias editpc="sudo nano ~/.bash_aliases"
 alias updapc="sudo apt update && sudo apt upgrade -y"
-alias reboo="sudo reboot"
-alias pwoff="sudo poweroff"
+alias reb="reboot"
+alias pwoff="poweroff"
 alias logd="sudo tail -f /var/log/syslog"
 alias logds="sudo dmesg -r"
 alias clr="clear"
@@ -15,8 +15,6 @@ alias aptclean="sudo apt clean && sudo apt autoclean && sudo apt autoremove -y"
 alias aptadd="sudo apt install"
 alias aptdel="sudo apt remove"
 
-
-alias sysm="htop"
 alias cls="clr"
 alias doas="sudo"
 
