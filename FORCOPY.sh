@@ -27,8 +27,9 @@ alias doas="sudo"
 # Prompt that better adapts to terminal size changes and shows time
 if [ $(id -u) -eq 0 ]; then
     # Root user prompt with dynamic adjustment and time display
-    export PS1='\033[0;34m┌──[\033[01;34mroot\033[01;33m@\033[01;96m\h\033[0;34m]─[\033[0;32m\w\033[0;34m]─[\033[0;35m\t\033[0;34m]\n\033[0;34m└──╼ \033[01;33m# \033[0m'
+	export PS1='\[\033[0;34m\]┌──[\[\033[01;34m\]root\[\033[01;33m\]@\[\033[01;96m\]\h\[\033[0;34m\]]─[\[\033[0;32m\]\w\[\033[0;34m\]]─[\[\033[0;35m\]\t\[\033[0;34m\]]\n\[\033[0;34m\]└──╼ \[\033[01;33m\]# \[\033[0m\]'
 else
     # Regular user prompt with dynamic adjustment and time display
-    export PS1='\033[0;34m┌──[\033[0;39m\u\033[01;33m@\033[01;96m\h\033[0;34m]─[\033[0;32m\w\033[0;34m]─[\033[0;35m\t\033[0;34m]\n\033[0;34m└──╼ \033[01;33m$ \033[0m'
+	export PS1='\[\033[0;34m\]┌──[\[\033[0;39m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h\[\033[0;34m\]]─[\[\033[0;32m\]\w\[\033[0;34m\]]─[\[\033[0;35m\]\t\[\033[0;34m\]]\n\[\033[0;34m\]└──╼ \[\033[01;33m\]$ \[\033[0m\]'
 fi
+
